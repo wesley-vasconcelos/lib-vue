@@ -1,0 +1,18 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+.sidBar {
+    height: 100vh;
+    margin: 0 !important;
+}
+
+.container .drawer__content {
+    padding: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.position-menu {
+    margin: 20px 0 0 30px !important;
+}
