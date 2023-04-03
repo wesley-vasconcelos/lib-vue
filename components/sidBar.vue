@@ -1,7 +1,7 @@
 <template>
     <v-sheet class="overflow-hidden sidBar" style="position: relative;">
         <v-container class="position-menu">
-            <v-row align="left" justify="left">
+            <v-row>
                 <v-btn color="pink" dark @click.stop="drawer = !drawer">
                     Toggle
                 </v-btn>
