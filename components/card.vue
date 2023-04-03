@@ -9,14 +9,14 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe></div>
 
-        <v-card-title>MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro</v-card-title>
+        <v-card-title>{{ item.title }}</v-card-title>
 
         <v-card-text>
             <v-row align="center" class="mx-0">
                 <v-rating :value="4.5" color="amber" dense half-increments readonly size="14"></v-rating>
 
                 <div class="grey--text ms-4">
-                    4.5 (413)
+                    {{ item.media }}
                 </div>
             </v-row>
 
@@ -35,7 +35,7 @@
 
 
         <v-card-actions class="pt-0">
-            <v-btn color="deep-purple lighten-2" text @click="reserve">
+            <v-btn color="deep-purple lighten-2" text @click="reserve(item.id, item.idCanal)">
                 Assistir
             </v-btn>
         </v-card-actions>
@@ -45,13 +45,19 @@
 <script>
 export default {
     name: 'Card',
+    props: {
+        item: {
+            type: Object,
+        },
+    },
     data: () => ({
         loading: false,
         selection: 1,
     }),
 
     methods: {
-        reserve() {
+        reserve(id) {
+            console.log('iddddd', id);
             this.loading = true
 
             setTimeout(() => (this.loading = false), 2000)
