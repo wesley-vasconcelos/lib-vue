@@ -1,19 +1,24 @@
 <template>
-    <ul class="quadro">
+    <div>
+        <navBar />
+        <ul class="quadro">
 
-        <li v-for="item in listVideos" :key="item.id">
-            <card :item="item" />
+            <li v-for="item in listVideos" :key="item.id">
+                <card :item="item" />
 
-        </li>
-    </ul>
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>
 import card from '../components/card.vue';
+import navBar from '../components/navBar.vue';
 
 export default {
     components: {
-        card
+        navBar,
+        card,
     },
 
     data() {
@@ -87,6 +92,7 @@ export default {
     flex-wrap: wrap;
     gap: 45px;
     justify-content: center;
+    margin-top: 150px;
 
 }
 
