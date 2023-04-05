@@ -1,6 +1,6 @@
 <template>
     <div>
-        <navBar />
+        <navBar @search="search" style="position: fixed; z-index: 0;" />
         <ul class="quadro">
 
             <li v-for="item in listVideos" :key="item.id">
@@ -20,13 +20,16 @@ export default {
         navBar,
         card,
     },
+    mounted() {
+        this.listVideos = this.initialValue
+    },
 
     data() {
-        const listVideos = [
+        const initialValue = [
             {
                 id: 0,
                 idCanal: 15555,
-                title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
+                title: 'MC Ryan SP',
                 media: '4.5 (8.13)',
                 canal: 'GR6 EXPLODE',
                 description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
@@ -76,9 +79,27 @@ export default {
             },
         ]
 
+        const listVideos = []
+        const search = (e) => {
+            const newArray = []
+            initialValue.filter(item => {
+                if (e == item.title) {
+                    newArray.push(item)
+                }
 
+                if (newArray.length === 0) {
+                    this.listVideos = this.initialValue
+                } else {
+                    this.listVideos = newArray
+
+                }
+            })
+        }
         return {
             listVideos,
+            search,
+            initialValue
+
 
         }
     }

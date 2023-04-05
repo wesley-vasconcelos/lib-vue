@@ -10,9 +10,10 @@
 <script>
 export default {
     props: {
-        dados: Array
+        dados: Array,
+        data: Array
     },
-    data() {
+    data(props) {
         const search = ""
 
 
@@ -62,67 +63,68 @@ export default {
                 },
 
             ],
-            data: [
-                {
-                    id: 0,
-                    idCanal: 15555,
-                    title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
-                    media: '4.5 (8.13)',
-                    canal: 'GR6 EXPLODE',
-                    description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
-                    videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
-                },
-                {
-                    id: 0,
-                    idCanal: 15555,
-                    title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
-                    media: '4.5 (8.13)',
-                    canal: 'GR6 EXPLODE',
-                    description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
-                    videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
-                }, {
-                    id: 0,
-                    idCanal: 15555,
-                    title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
-                    media: '4.5 (8.13)',
-                    canal: 'GR6 EXPLODE',
-                    description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
-                    videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
-                }, {
-                    id: 0,
-                    idCanal: 15555,
-                    title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
-                    media: '4.5 (8.13)',
-                    canal: 'GR6 EXPLODE',
-                    description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
-                    videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
-                }, {
-                    id: 0,
-                    idCanal: 15555,
-                    title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
-                    media: '4.5 (8.13)',
-                    canal: 'GR6 EXPLODE',
-                    description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
-                    videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
-                }, {
-                    id: 0,
-                    idCanal: 15555,
-                    title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
-                    media: '4.5 (8.13)',
-                    canal: 'GR6 EXPLODE',
-                    description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
-                    videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
-                }, {
-                    id: 0,
-                    idCanal: 15555,
-                    title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
-                    media: '4.5 (8.13)',
-                    canal: 'GR6 EXPLODE',
-                    description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
-                    videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
-                },
+            data: props.data
+            // data: [
+            //     {
+            //         id: 0,
+            //         idCanal: 15555,
+            //         title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
+            //         media: '4.5 (8.13)',
+            //         canal: 'GR6 EXPLODE',
+            //         description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
+            //         videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
+            //     },
+            //     {
+            //         id: 0,
+            //         idCanal: 15555,
+            //         title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
+            //         media: '4.5 (8.13)',
+            //         canal: 'GR6 EXPLODE',
+            //         description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
+            //         videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
+            //     }, {
+            //         id: 0,
+            //         idCanal: 15555,
+            //         title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
+            //         media: '4.5 (8.13)',
+            //         canal: 'GR6 EXPLODE',
+            //         description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
+            //         videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
+            //     }, {
+            //         id: 0,
+            //         idCanal: 15555,
+            //         title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
+            //         media: '4.5 (8.13)',
+            //         canal: 'GR6 EXPLODE',
+            //         description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
+            //         videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
+            //     }, {
+            //         id: 0,
+            //         idCanal: 15555,
+            //         title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
+            //         media: '4.5 (8.13)',
+            //         canal: 'GR6 EXPLODE',
+            //         description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
+            //         videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
+            //     }, {
+            //         id: 0,
+            //         idCanal: 15555,
+            //         title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
+            //         media: '4.5 (8.13)',
+            //         canal: 'GR6 EXPLODE',
+            //         description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
+            //         videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
+            //     }, {
+            //         id: 0,
+            //         idCanal: 15555,
+            //         title: 'MC Ryan SP E MC Hariel - O Dia Chegou (GR6 Explode) DJ Pedro',
+            //         media: '4.5 (8.13)',
+            //         canal: 'GR6 EXPLODE',
+            //         description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
+            //         videoUrl: 'https://www.youtube.com/watch?v=ebE3W_D3qZw&embeds_euri=http%3A%2F%2Flocalhost%3A3000%2F&source_ve_path=MjM4NTE&feature=emb_title'
+            //     },
 
-            ],
+            // ],
         }
     },
 }

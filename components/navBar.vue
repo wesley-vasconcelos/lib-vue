@@ -12,7 +12,7 @@
 
                 <v-btn icon>
 
-                    <v-icon @click="handleSearch">mdi-magnify</v-icon>
+                    <v-icon @click="$emit('search', search)">mdi-magnify</v-icon>
                 </v-btn>
             </div>
             <v-btn icon>

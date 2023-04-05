@@ -9,7 +9,7 @@
   </v-row> -->
   <div>
     <navBar />
-    <tabela class="mt-16" />
+    <tabela :data="data" class="mt-16" />
   </div>
 </template>
 
@@ -21,6 +21,11 @@ export default {
   comments: {
     tabela, navBar
   },
+  data() {
+    return {
+      data: []
+    }
+  }
 }
 </script>
 
