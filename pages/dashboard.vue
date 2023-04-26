@@ -29,7 +29,7 @@ export default {
             {
                 id: 0,
                 idCanal: 15555,
-                title: 'MC Ryan SP',
+                title: 'dillas',
                 media: '4.5 (8.13)',
                 canal: 'GR6 EXPLODE',
                 description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
@@ -38,7 +38,7 @@ export default {
             {
                 id: 1,
                 idCanal: 15555,
-                title: 'Dillas',
+                title: 'MC Ryan SP',
                 media: '7.5 (4.13)',
                 canal: 'GR6 EXPLODE',
                 description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
@@ -47,7 +47,7 @@ export default {
             {
                 id: 2,
                 idCanal: 15555,
-                title: 'Dillas',
+                title: 'MC Ryan SP',
                 media: '7.5 (4.13)',
                 canal: 'GR6 EXPLODE',
                 description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
@@ -55,7 +55,7 @@ export default {
             }, {
                 id: 3,
                 idCanal: 15555,
-                title: 'Dillas',
+                title: 'MC Ryan SP',
                 media: '7.5 (4.13)',
                 canal: 'GR6 EXPLODE',
                 description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
@@ -63,7 +63,7 @@ export default {
             }, {
                 id: 4,
                 idCanal: 15555,
-                title: 'Dillas',
+                title: 'MC Ryan SP',
                 media: '7.5 (4.13)',
                 canal: 'GR6 EXPLODE',
                 description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',
@@ -71,7 +71,7 @@ export default {
             }, {
                 id: 5,
                 idCanal: 15555,
-                title: 'Dillas',
+                title: 'MC Ryan SP',
                 media: '7.5 (4.13)',
                 canal: 'GR6 EXPLODE',
                 description: 'Siga no Instagram: @gr6explodeoriginal | @gr6filmesoficial | @gr6music Produzido por GR6 Filmes',

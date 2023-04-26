@@ -3,7 +3,7 @@
         <h1 class="mt-8 mb-8">Lista</h1>
         <v-data-table :headers="headers" :items="data" :items-per-page="5" class="elevation-1"></v-data-table>
 
-        <v-text-field v-model="search" label="pesquisa"></v-text-field>
+        <!-- <v-text-field v-model="search" label="pesquisa"></v-text-field> -->
     </div>
 </template>
   
