@@ -81,20 +81,21 @@ export default {
 
         const listVideos = []
         const search = (e) => {
-            const newArray = []
+            const newArray = [];
+            const regex = new RegExp([...e].join('.*'), 'i');
             initialValue.filter(item => {
-                if (e == item.title) {
-                    newArray.push(item)
+                if (item.title.match(regex)) {
+                    newArray.push(item);
                 }
+            });
 
-                if (newArray.length === 0) {
-                    this.listVideos = this.initialValue
-                } else {
-                    this.listVideos = newArray
+            if (newArray.length === 0) {
+                this.listVideos = this.initialValue;
+            } else {
+                this.listVideos = newArray;
+            }
+        };
 
-                }
-            })
-        }
         return {
             listVideos,
             search,
