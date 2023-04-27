@@ -28,7 +28,7 @@
                         <v-icon>{{ item.icon }}</v-icon>
                     </v-list-item-icon>
 
-                    <v-list-item-content>
+                    <v-list-item-content @click="redirect(item.routerName)">
                         <v-list-item-title>{{ item.title }}</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
@@ -40,11 +40,18 @@
 <script>
 export default {
     data() {
+        const redirect = (e) => {
+            this.$router.push(e)
+        }
         return {
             drawer: true,
+            redirect,
             items: [
-                { title: 'Home', icon: 'mdi-view-dashboard' },
-                { title: 'About', icon: 'mdi-forum' },
+                { title: 'Dashboard', icon: 'mdi-view-dashboard', routerName: '/dashboard' },
+                { title: 'About', icon: 'mdi-forum', routerName: '/dashboard' },
+                { title: 'Cadastro', icon: 'mdi-forum', routerName: '/cadastro' },
+
+
             ],
         }
     },

@@ -8,20 +8,29 @@
 
             </li>
         </ul>
+        <Form @formValue="formValue" />
     </div>
 </template>
 
 <script>
 import card from '../components/card.vue';
+import Form from '../components/form/form.vue';
 import navBar from '../components/navBar.vue';
-
 export default {
     components: {
         navBar,
         card,
+        Form
     },
     mounted() {
         this.listVideos = this.initialValue
+        this.$axios.get('/file/apicep/06233-030.json')
+            .then((response) => {
+                console.log(response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
     },
 
     data() {
@@ -95,11 +104,14 @@ export default {
                 this.listVideos = newArray;
             }
         };
-
+        const formValue = (e) => {
+            console.log('eeeeeeeeeeeeeeeeeeeeeeeeeeeee', e);
+        }
         return {
             listVideos,
             search,
-            initialValue
+            initialValue,
+            formValue
 
 
         }
